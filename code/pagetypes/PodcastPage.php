@@ -205,8 +205,7 @@ class PodcastPage_Controller extends Page_Controller {
 	public function podcastEpisodes() {
 		return PodcastEpisode::get()
 			->filter(array('PodcastPageID' => $this->ID))
-			->sort('EpisodeDate', 'DESC')
-		;
+			->sort('EpisodeDate', 'DESC');
 	}
 	
 
